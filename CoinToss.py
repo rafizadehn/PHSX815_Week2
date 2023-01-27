@@ -23,10 +23,10 @@ if __name__ == "__main__":
     prob = 0.5
 
     # default number of coin tosses (per experiment)
-    Ntoss = 1
+    Ntoss = 5
 
     # default number of experiments
-    Nexp = 1
+    Nexp = 10000
 
     # output file defaults
     doOutputFile = False

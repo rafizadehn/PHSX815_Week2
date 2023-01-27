@@ -68,3 +68,20 @@ class Random:
       X = -math.log(R)/beta
 
       return X
+
+  # function returns a random number 1-6 according to a categorical distribution
+    def Categorical(self, p1=1/6, p2=1/6, p3=1/6, p4=1/6, p5=1/6, p6=1/6):
+        R = self.rand();
+
+        if R < p1:
+            return 1
+        if (R > p1) & (R < p1+p2):
+            return 2
+        if (R > p1+p2) & (R < p1+p2+p3):
+            return 3
+        if (R > p1+p2+p3) & (R < p1+p2+p3+p4):
+            return 4
+        if (R > p1+p2+p3+p4) & (R < p1+p2+p3+p4+p5):
+            return 5
+        if (R > p1+p2+p3+p4+p5):
+            return 6
