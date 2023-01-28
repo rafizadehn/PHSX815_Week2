@@ -9,6 +9,7 @@ This repository includes a few different projects, each of which are detailed be
 
 To simulate a coin toss, run the **CoinToss.py** file with Python[^1]. In Linux, this means opening the containing folder in the terminal and simply running, 
 > $ python3 CoinToss.py
+
 The default seed in the file is a fixed value, however you can change this value by including the argument `-seed ####` which will provide a different output from the algorithm.
 
 Similarly, you can change the number of tosses with the `-Ntoss ####` argument, and change the number of experiments with the `-Nexp` argument. The number of tosses detailes how many times the algorithm will return an output, while the number of experiments details the number of times the algorithm is run. This means unless the seed is changed, the outputs for each run will be the same.
