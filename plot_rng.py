@@ -13,12 +13,12 @@ with open('dicerolls.txt') as fp:
         #line = line[:-2]
         line=float(line)
         data.append(line)
-print(data)
+
 # converts data into an array for easier histogram creation
 data = np.asarray(data)
 
 # create histogram of our data
-n, bins, patches = plt.hist(data, 6 ,edgecolor = 'black', linewidth = 3, density=True, facecolor='orange', alpha=0.75)
+n, bins, patches = plt.hist(data, 16,edgecolor = 'black', linewidth = 3, density=True, facecolor='orange', alpha=0.75)
 
 # plot formating options
 plt.xlabel('Value of Simulated Die Roll')
